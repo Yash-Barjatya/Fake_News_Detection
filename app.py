@@ -4,13 +4,11 @@ import nltk
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
 import re
-import string
-
 app = Flask(__name__)
 
 # Load model and vectorizer
-loaded_model = pickle.load(open('model.pkl', 'rb'))
-loaded_tfidfvect = pickle.load(open('tfidfvect.pkl', 'rb'))
+loaded_model = pickle.load(open('models/model.pkl', 'rb'))
+loaded_tfidfvect = pickle.load(open('models/tfidfvect.pkl', 'rb'))
 lemmatizer = WordNetLemmatizer()
 stpwrds = list(stopwords.words('english'))
 
