@@ -1,5 +1,8 @@
-scikit-learn
 pandas
 numpy
+seaborn
+matplotlib
+nltk
+scikit-learn
+xgboost
 Flask
-pickle
