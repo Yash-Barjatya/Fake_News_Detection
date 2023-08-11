@@ -29,14 +29,14 @@ def preprocessText(text):
 
 
 def fake_news_det(news):
-    print('news', news)
+    # print('news', news)
     # Preprocess the input news
     # preprocessed_news = preprocessText(news)
     preprocessed_news = news
     vectorized_input_data = loaded_tfidfvect.transform(
         [preprocessed_news])  # Transform the preprocessed news
     prediction = loaded_model.predict(vectorized_input_data)
-    print('prediction', prediction[0])
+    # print('prediction', prediction[0])
     return prediction[0]
 
 
